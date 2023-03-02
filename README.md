@@ -32,11 +32,11 @@ https://zenwave360.github.io/zenwave-sdk/plugins/jdl-to-asyncapi/
 
 ```shell
 jbang zw -p io.zenwave360.sdk.plugins.JDLToAsyncAPIPlugin \
-    includeCommands=false \
+    includeCommands=true \
     specFile=src/main/resources/model/orders-model.jdl \
     schemaFormat=schema \
     annotations=aggregate \
-    payloadStyle=stateTransfer \
+    payloadStyle=event \
     targetFile=src/main/resources/model/asyncapi.yml
 ```
 
